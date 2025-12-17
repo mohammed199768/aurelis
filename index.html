@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelis Dental | Redefining Modern Dentistry</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- Loader -->
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="loader-wrap-heading">
+            <span class="brand-text">Aurelis</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-tooth"></i></span>
+                Aurelis<span class="gold">Dental</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" data-i18n="nav_home">Home</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#why-us" data-i18n="nav_whyus">Why Us</a>
+                <a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a>
+                <a href="#blog" data-i18n="nav_blog">Blog</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-text">
+                    <span class="current-lang">AR</span>
+                </button>
+                <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Book Appointment</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-links">
+            <a href="#home" data-i18n="nav_home">Home</a>
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#services" data-i18n="nav_services">Services</a>
+            <a href="#why-us" data-i18n="nav_whyus">Why Us</a>
+            <a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a>
+            <a href="#blog" data-i18n="nav_blog">Blog</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg-img">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop"
+                alt="Modern Dental Clinic">
+            <div class="overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Redefining Modern Dentistry</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Precision care. Timeless smiles. Global standards.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_book">Book Appointment</a>
+                    <a href="#services" class="btn btn-outline" data-i18n="btn_explore">Explore Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about" aria-label="Scroll Down"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <!-- Intro / About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-img">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf4722e12?q=80&w=2070&auto=format&fit=crop"
+                            alt="Dentist Patient Interaction">
+                        <div class="exp-badge">
+                            <span class="years">15+</span>
+                            <span class="text" data-i18n="years_exp">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-text">
+                    <h4 class="sub-heading" data-i18n="about_subtitle">Who We Are</h4>
+                    <h2 class="heading" data-i18n="about_title">Experience the Art of Dentistry</h2>
+                    <p class="desc" data-i18n="about_desc">
+                        At Aurelis Dental, dentistry is not a routine procedure—it is a crafted experience. We combine
+                        advanced dental technology, aesthetic excellence, and patient-centered care to deliver results
+                        that feel natural, confident, and lasting.
+                    </p>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="about_point1">Advanced Technology</span>
+                        </li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="about_point2">Expert Doctors</span></li>
+                        <li><i class="fa-solid fa-check"></i> <span data-i18n="about_point3">Personalized Care</span>
+                        </li>
+                    </ul>
+                    <a href="#company" class="btn btn-text-arrow" data-i18n="btn_more">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / Why Us -->
+    <section id="why-us" class="section features-grid">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="sub-heading" data-i18n="whyus_subtitle">Why Choose Us</h4>
+                <h2 class="heading" data-i18n="whyus_title">Excellence in Every Detail</h2>
+            </div>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3 data-i18n="feat_1_title">Expert Doctors</h3>
+                    <p data-i18n="feat_1_desc">Highly experienced dentists with accredited certifications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3 data-i18n="feat_2_title">Modern Technology</h3>
+                    <p data-i18n="feat_2_desc">The latest dental devices and treatment technologies.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 data-i18n="feat_3_title">Safe Environment</h3>
+                    <p data-i18n="feat_3_desc">Sterile and safe environment following highest medical standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-file-invoice dollar"></i></div>
+                    <h3 data-i18n="feat_4_title">Transparent Plans</h3>
+                    <p data-i18n="feat_4_desc">Clear and transparent treatment plans with no hidden costs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 data-i18n="feat_5_title">Patient Care</h3>
+                    <p data-i18n="feat_5_desc">Genuine interest in patient comfort and pain reduction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="sub-heading" data-i18n="services_subtitle">Our Services</h4>
+                <h2 class="heading" data-i18n="services_title">Comprehensive Dental Solutions</h2>
+            </div>
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="num">01</span>
+                        <h3 data-i18n="srv_1_title">General Dentistry</h3>
+                        <p data-i18n="srv_1_desc">Regular checkups, cleaning, cavity treatment, and fillings to maintain
+                            long-term dental health.</p>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1609840114035-1c29046a8af3?q=80&w=2070&auto=format&fit=crop"
+                            alt="General Dentistry">
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="num">02</span>
+                        <h3 data-i18n="srv_2_title">Cosmetic Dentistry</h3>
+                        <p data-i18n="srv_2_desc">Hollywood smile, teeth whitening, veneers, and luminaires for a
+                            natural look that reflects your confidence.</p>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?q=80&w=2070&auto=format&fit=crop"
+                            alt="Cosmetic Dentistry">
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="num">03</span>
+                        <h3 data-i18n="srv_3_title">Orthodontics</h3>
+                        <p data-i18n="srv_3_desc">Metal and clear braces (Invisalign), effective solutions for various
+                            ages to achieve perfect teeth alignment.</p>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=2070&auto=format&fit=crop"
+                            alt="Orthodontics">
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-item">
+                    <div class="service-info">
+                        <span class="num">04</span>
+                        <h3 data-i18n="srv_4_title">Dental Implants</h3>
+                        <p data-i18n="srv_4_desc">Permanent replacement for missing teeth using the latest global
+                            implant systems with natural and safe results.</p>
+                    </div>
+                    <div class="service-img">
+                        <img src="https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?q=80&w=2070&auto=format&fit=crop"
+                            alt="Implants">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+        <div class="overlay-dark"></div>
+        <div class="container relative">
+            <div class="section-header text-center">
+                <h4 class="sub-heading" data-i18n="testi_subtitle">Testimonials</h4>
+                <h2 class="heading" data-i18n="testi_title">What Our Patients Say</h2>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="review" data-i18n="testi_1_text">"Excellent experience from the first visit, classy
+                        treatment and wonderful results."</p>
+                    <h5 class="author" data-i18n="testi_1_author">Sarah M.</h5>
+                </div>
+                <!-- More testimonials can be added dynamically or statically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-text">
+                    <h4 class="sub-heading" data-i18n="faq_subtitle">FAQ</h4>
+                    <h2 class="heading" data-i18n="faq_title">Common Questions</h2>
+                    <p class="desc" data-i18n="faq_desc">Find answers to the most frequently asked questions about our
+                        dental services and procedures.</p>
+                </div>
+                <div class="col-accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 data-i18n="faq_1_q">Is the treatment painful?</h3>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p data-i18n="faq_1_a">We are keen to use the latest anesthesia and treatment techniques to
+                                reduce pain as much as possible.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 data-i18n="faq_2_q">Do you offer personalized treatment plans?</h3>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p data-i18n="faq_2_a">Yes, each case is studied individually and a treatment plan is drawn
+                                up to suit the patient's needs.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3 data-i18n="faq_3_q">Is the clinic sterile?</h3>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="accordion-body">
+                            <p data-i18n="faq_3_a">We adhere to the highest medically approved sterilization and safety
+                                standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <h4 class="sub-heading" data-i18n="blog_subtitle">Our Blog</h4>
+                <h2 class="heading" data-i18n="blog_title">Latest Updates</h2>
+            </div>
+            <div class="grid-3">
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop"
+                            alt="Toothbrushing">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Oct 12, 2023</span>
+                        <h3 data-i18n="blog_1_title">How to maintain your dental health daily?</h3>
+                        <a href="#" class="read-more" data-i18n="read_more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=2070&auto=format&fit=crop"
+                            alt="Whitening">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Sep 28, 2023</span>
+                        <h3 data-i18n="blog_2_title">Difference between home and professional whitening</h3>
+                        <a href="#" class="read-more" data-i18n="read_more">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf4722e12?q=80&w=2070&auto=format&fit=crop"
+                            alt="Orthodontics">
+                    </div>
+                    <div class="blog-content">
+                        <span class="date">Sep 15, 2023</span>
+                        <h3 data-i18n="blog_3_title">When do you need orthodontics?</h3>
+                        <a href="#" class="read-more" data-i18n="read_more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col brand-col">
+                    <a href="#" class="logo">
+                        Aurelis<span class="gold">Dental</span>
+                    </a>
+                    <p data-i18n="footer_brand_desc">We don’t treat teeth. We care for people, precision, and long-term
+                        trust.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_contact">Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact_address">123 Medical Center Dr,
+                            Suite 100</span></p>
+                    <p><i class="fa-solid fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fa-solid fa-envelope"></i> contact@aurelisdental.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer_hours">Hours</h4>
+                    <p data-i18n="contact_hours">Sat - Thu: 9:00 AM - 7:00 PM</p>
+                    <p data-i18n="contact_closed">Friday: Closed</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aurelis Dental. <span data-i18n="footer_rights">All Rights Reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
