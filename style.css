@@ -1072,14 +1072,6 @@ textarea.form-control {
         left: 0;
     }
 
-    .navbar .nav-links {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
     .footer-top {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1163,5 +1155,173 @@ textarea.form-control {
 
     .logo {
         font-size: 1.5rem;
+    }
+}
+
+/* Bottom Navigation (Mobile App Style) */
+.bottom-nav {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    /* Hide nav menu, hamburger and desktop book button on mobile */
+    .navbar .nav-links,
+    .navbar .hamburger,
+    .navbar .btn-primary {
+        display: none !important;
+    }
+
+    /* Adjust navbar to be minimal header */
+    .navbar {
+        height: 60px;
+        padding: 5px 0 !important;
+        background: rgba(7, 15, 24, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar .container {
+        justify-content: space-between;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Logo adjustment */
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    /* Bottom Nav Styles */
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(7, 15, 24, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        font-size: 0.7rem;
+        text-decoration: none !important;
+        gap: 6px;
+        width: 20%;
+        height: 100%;
+        transition: all 0.3s ease;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-item i {
+        font-size: 1.2rem;
+        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .nav-item.active {
+        color: var(--secondary-color);
+    }
+
+    .nav-item.active i {
+        transform: translateY(-3px);
+    }
+
+    .nav-item:hover {
+        color: var(--secondary-color);
+    }
+
+    /* Floating Action Button (FAB) */
+    .nav-item.fab-wrapper {
+        position: relative;
+        top: -30px;
+        overflow: visible;
+        pointer-events: none;
+        /* Let the FAB inside take events */
+    }
+
+    .fab {
+        pointer-events: auto;
+        width: 65px;
+        height: 65px;
+        background: var(--secondary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 20px rgba(200, 169, 106, 0.4);
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        border: 5px solid var(--primary-color);
+        /* Matches background to look cut-out */
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .fab:hover {
+        transform: scale(1.05) rotate(90deg);
+        color: var(--primary-color);
+        box-shadow: 0 10px 25px rgba(200, 169, 106, 0.6);
+    }
+
+    /* Add padding to body so content isn't hidden */
+    body {
+        padding-bottom: 80px;
+    }
+
+    /* Ensure Mobile Menu fits app style */
+    .mobile-menu {
+        top: auto;
+        bottom: 0;
+        height: 0;
+        /* Animated */
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        /* It becomes a drawer from bottom */
+        transform: translateY(100%);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        padding-bottom: 90px;
+        /* Space for bottom nav */
+        overflow: hidden;
+    }
+
+    .mobile-menu.active {
+        transform: translateY(0);
+        height: 70vh;
+        /* Don't cover full screen, look like a sheet */
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .mobile-links {
+        height: 100%;
+        overflow-y: auto;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    /* Drag handle for the drawer visual */
+    .mobile-menu::before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 2px;
     }
 }

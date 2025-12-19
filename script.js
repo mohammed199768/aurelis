@@ -7,6 +7,7 @@ const translations = {
         nav_testimonials: "Testimonials",
         nav_blog: "Blog",
         nav_contact: "Contact",
+        nav_menu: "Menu",
         btn_book: "Book Appointment",
         btn_explore: "Explore Services",
         btn_more: "Learn More",
@@ -98,6 +99,7 @@ const translations = {
         nav_testimonials: "آراء المرضى",
         nav_blog: "المدونة",
         nav_contact: "اتصل بنا",
+        nav_menu: "القائمة",
         btn_book: "احجز موعدك الآن",
         btn_explore: "استكشف الخدمات",
         btn_more: "اقرأ المزيد",
@@ -386,6 +388,15 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('active');
         hamburger.classList.toggle('active'); // For animation
     });
+
+    // Bottom Nav Menu Trigger
+    const mobileTrigger = document.getElementById('mobile-menu-trigger');
+    if (mobileTrigger) {
+        mobileTrigger.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent jump
+            mobileMenu.classList.toggle('active');
+        });
+    }
 
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
